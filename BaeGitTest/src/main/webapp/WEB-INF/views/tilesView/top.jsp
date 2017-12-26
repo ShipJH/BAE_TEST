@@ -28,9 +28,10 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html">This is Massively</a></li>
-							<li><a href="generic.html">Generic Page</a></li>
-							<li><a href="elements.html">Elements Reference</a></li>
+							<li class="active"><a href="/">This is Massively</a></li>
+							<li><a href="/daumApi.do">daum-Map</a></li>
+							<li><a href="/qrCode.do">QR-CODE</a></li>
+							<li><a href="/qrCode2.do">QR-CODE(googleAPI)</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>

@@ -31,7 +31,7 @@ public class SampleController {
         return modelAndView;
     }
     
-    //테스트 화면1 부트스트랩적용
+    //�뀒�뒪�듃 �솕硫�1 遺��듃�뒪�듃�옪�쟻�슜
     @RequestMapping("main")
    public ModelAndView mainpage() {
        ModelAndView modelAndView = new ModelAndView();
@@ -39,7 +39,7 @@ public class SampleController {
        
        return modelAndView;
    }
-  //테스트 화면2 부트스트랩적용
+  //�뀒�뒪�듃 �솕硫�2 遺��듃�뒪�듃�옪�쟻�슜
     @RequestMapping("main2")
    public ModelAndView mainpage2() {
        ModelAndView modelAndView = new ModelAndView();
@@ -47,5 +47,32 @@ public class SampleController {
        
        return modelAndView;
    }
-
+    
+  //다음주소 API 테스트
+    @RequestMapping("/daumApi")
+    public ModelAndView join() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("skTest/daumApi");
+        
+        return modelAndView;
+    }
+    
+    //QRcode 테스트
+    @RequestMapping("/qrCode")
+    public ModelAndView qrCode() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("skTest/qrCode");
+        
+        return modelAndView;
+    }
+    
+    //QRcode google API테스트
+    @RequestMapping("/qrCode2")
+    public ModelAndView qrCode2() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("skTest/qrCode2");
+        
+        return modelAndView;
+    }
+    
 }

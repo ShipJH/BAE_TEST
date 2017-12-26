@@ -9,7 +9,7 @@
     <version>1.0.0-BUILD-SNAPSHOT</version>
 
     <properties>
-        <org.springframework-version>5.0.0.RELEASE</org.springframework-version>
+        <org.springframework-version>4.3.13.RELEASE</org.springframework-version>
         <org.aspectj-version>1.7.3</org.aspectj-version>
         <org.slf4j-version>1.6.6</org.slf4j-version>
         <logback.version>1.1.7</logback.version>
@@ -54,6 +54,11 @@
             <version>${org.springframework-version}</version>
         </dependency>
 
+	<dependency>
+		<groupId>org.aspectj</groupId>
+	    <artifactId>aspectjweaver</artifactId>
+	    <version>1.8.11</version>
+	</dependency>
 
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <dependency>

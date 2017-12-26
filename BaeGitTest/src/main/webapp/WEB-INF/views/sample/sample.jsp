@@ -6,30 +6,56 @@
     <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
     <title>Insert title here</title>
 </head>
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script type="text/javascript">
+
+$(function(){
+	$('button').click(function(){
+		var url='data:application/vnd.ms-excel,' + encodeURIComponent($('#exceldownload').html()) 
+		 			location.href=url
+		 			return false
+	})
+})
+</script>
+
+<style type="text/css">
+#exBt {
+	margin: 0;
+	padding: 0;
+	margin-left: 5px;
+}
+</style>
+
 <body>
 <h3>회원 리스트</h3>
 <h3>TEST(배재현) 20171205 test</h3>
-<table border="1">
-    <tr>
-        <%--<td colspan="5" style="text-align:center;">회원명수 : ${resultCount}명</td>--%>
-    </tr>
-    <tr>
-        <th>로그인ID</th>
-        <th>이름</th>
-        <th>이메일</th>
-        <th>전화번호</th>
-        <th>가입일자</th>
-    </tr>
-    <c:forEach var="list" items="${resultList}">
-        <tr>
-            <td>${list.USR_LGN}</td>
-            <td>${list.USR_NM}</td>
-            <td>${list.USR_EML}</td>
-            <td>${list.USR_TEL}</td>
-            <td>${list.CRT_DT}</td>
 
-        </tr>
-    </c:forEach>
-</table>
+<div id="exceldownload">
+	<table border="1">
+	    <tr>
+	        <%--<td colspan="5" style="text-align:center;">회원명수 : ${resultCount}명</td>--%>
+	    </tr>
+	    <tr>
+	        <th>로그인ID</th>
+	        <th>이름</th>
+	        <th>이메일</th>
+	        <th>전화번호</th>
+	        <th>가입일자</th>
+	    </tr>
+	    <c:forEach var="list" items="${resultList}">
+	        <tr>
+	            <td>${list.USR_LGN}</td>
+	            <td>${list.USR_NM}</td>
+	            <td>${list.USR_EML}</td>
+	            <td>${list.USR_TEL}</td>
+	            <td>${list.CRT_DT}</td>
+	
+	        </tr>
+	    </c:forEach>
+	</table>
+</div>
+
+	<button id="exBt"> Excel-Download </button>
+	
 </body>
 </html>
