@@ -18,6 +18,11 @@ $(function(){
 	})
 })
 
+function excelread() {
+	var form = document.exform;
+	form.action = "/excelUp.do"
+	form.submit();
+}
 
 </script>
 
@@ -33,7 +38,7 @@ $(function(){
 <h3>회원 리스트</h3>
 <h3>TEST(배재현)</h3>
 
-<form id="exform" method="post"  >
+<form id="exform" method="post" enctype="Multipart/form-data"  >
 	<div id="exceldownload">
 		<table border="1">
 		    <tr>
@@ -64,6 +69,9 @@ $(function(){
 		
 		<!-- IE도 됨 -->
 		<a href='<c:url value="/exportToExcel.do"/>'>excel-Download</a>
+		
+		<input type="file" id="files" />
+		<input type="button" id="excelread" value="go"/>
 		
 </form>
 	
