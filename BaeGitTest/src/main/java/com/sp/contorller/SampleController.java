@@ -57,7 +57,7 @@ public class SampleController {
         return modelAndView;
     }
     
-    //�뀒�뒪�듃 �솕硫�1 遺��듃�뒪�듃�옪�쟻�슜
+    //占쎈�믭옙�뮞占쎈뱜 占쎌넅筌롳옙1 �겫占쏙옙�뱜占쎈뮞占쎈뱜占쎌삫占쎌읅占쎌뒠
     @RequestMapping("main")
    public ModelAndView mainpage() {
        ModelAndView modelAndView = new ModelAndView();
@@ -65,7 +65,7 @@ public class SampleController {
        
        return modelAndView;
    }
-  //�뀒�뒪�듃 �솕硫�2 遺��듃�뒪�듃�옪�쟻�슜
+  //占쎈�믭옙�뮞占쎈뱜 占쎌넅筌롳옙2 �겫占쏙옙�뱜占쎈뮞占쎈뱜占쎌삫占쎌읅占쎌뒠
     @RequestMapping("main2")
    public ModelAndView mainpage2() {
        ModelAndView modelAndView = new ModelAndView();
@@ -74,7 +74,7 @@ public class SampleController {
        return modelAndView;
    }
     
-  //다음주소 API 테스트
+  //�떎�쓬二쇱냼 API �뀒�뒪�듃
     @RequestMapping("/daumApi")
     public ModelAndView join() {
         ModelAndView modelAndView = new ModelAndView();
@@ -83,7 +83,7 @@ public class SampleController {
         return modelAndView;
     }
     
-    //QRcode 테스트
+    //QRcode �뀒�뒪�듃
     @RequestMapping("/qrCode")
     public ModelAndView qrCode() {
         ModelAndView modelAndView = new ModelAndView();
@@ -92,7 +92,7 @@ public class SampleController {
         return modelAndView;
     }
     
-    //QRcode google API테스트
+    //QRcode google API�뀒�뒪�듃
     @RequestMapping("/qrCode2")
     public ModelAndView qrCode2() {
         ModelAndView modelAndView = new ModelAndView();
@@ -101,13 +101,13 @@ public class SampleController {
         return modelAndView;
     }
     
-	//엑셀 다운로드할때
+	//�뿊�� �떎�슫濡쒕뱶�븷�븣
 	 @RequestMapping(value="/exportToExcel")
 	 public ModelAndView excelDownload(Map<String, Object> ModelMap, HttpServletResponse response) throws Exception{
 		 ModelAndView modelAndView = new ModelAndView(); 
 		 
 		 modelAndView.addObject("excelList",sampleService.getUserList());
-		 modelAndView.setViewName("skTest/exportToExcel");
+		 modelAndView.setViewName("skTest/excel/exportToExcel");
 		 
 	        return modelAndView;
 	 

@@ -32,6 +32,7 @@
 							<li><a href="/daumApi.do">daum-Map</a></li>
 							<li><a href="/qrCode.do">QR-CODE</a></li>
 							<li><a href="/qrCode2.do">QR-CODE(googleAPI)</a></li>
+							<li><a href="/exportToExcel.do">excelDown</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
