@@ -6,7 +6,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 
-<!-- <script type="text/javascript" src="assets/js/jquery.js"></script>
+<!-- 
+<script type="text/javascript" src="assets/js/jquery.js"></script>
 <script type="text/javascript" src="assets/js/qrcode.js"></script> 
 <script type="text/javascript" src="assets/js/jquery.qrcode.js"></script>
 <script type="text/javascript" src="assets/js/jquery.qrcode.min.js"></script>

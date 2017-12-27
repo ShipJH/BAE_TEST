@@ -33,7 +33,7 @@ $(document).ready(function(){
 	
 	<h2>QR-CODE google API</h2>
     
-    <input type="text" id="id1"/>
+    <input type="text" id="id1" placeholder="value"/>
     
 	<div>
 		<button id="createBtn">create</button>
